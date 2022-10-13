@@ -40,6 +40,7 @@ def short(market: str, size_usd: float, stop_loss_percentual_movement: float = -
 
 
 def strategy(headline: float, core: float):
+    global already_traded
 # -long <= 7.9% headline && 6.3% core
 # -short >= 8.3% headline && 6.6% core
     if already_traded:
